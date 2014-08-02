@@ -1,0 +1,2 @@
+serviceClass: com.intelliinvest.client.service.LoginService
+path: BFB7CA3B2FBF64A2D856B7A7F2126F1D.gwt.rpc

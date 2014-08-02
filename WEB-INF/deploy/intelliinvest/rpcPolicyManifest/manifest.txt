@@ -1,0 +1,5 @@
+# Module intelliinvest
+# RPC service class, partial path of RPC policy file
+com.intelliinvest.client.service.IntelliInvestService, 95C96A43DFF4A6E047FAB78C1FFDFFD7.gwt.rpc
+com.intelliinvest.client.service.LoginService, BFB7CA3B2FBF64A2D856B7A7F2126F1D.gwt.rpc
+com.intelliinvest.client.service.UtilService, 66020C9D79BB5760A2EC721AEDEFE4C1.gwt.rpc

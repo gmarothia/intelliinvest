@@ -1,0 +1,2 @@
+serviceClass: com.intelliinvest.client.service.UtilService
+path: 66020C9D79BB5760A2EC721AEDEFE4C1.gwt.rpc
