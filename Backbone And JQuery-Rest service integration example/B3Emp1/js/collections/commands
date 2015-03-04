@@ -1,0 +1,8 @@
+// Console Commands
+
+emps = new App.Employees();
+emps.create({ name:'Mark Robinson', dateOfJoining:'10/03/2012'} );
+emp = emps.at(0);
+emp.save({ name: 'Mark Robertson' });
+emp.destroy();
+emps.fetch();

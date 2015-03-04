@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task Management Application</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/template" id="task-template">
+        <h2>Tasks(Using Template)</h2>
+        <ul>
+            <li><%=title%></li>
+            <li><%=priority%></li>
+        </ul>
+    </script>
+    <script type="text/template" id="n-task-template">
+
+        <li><%=title%></li>
+        <li><%=priority%></li>
+
+    </script>
+    <script type="text/template" id="task-event-template">
+
+        <h2>Tasks(Using Template)</h2>
+        <ul>
+            <li><%=title%>
+                <button type="button" class="event-button">Click Me</button>
+            </li>
+            <li><%=priority%></li>
+        </ul>
+
+    </script>
+
+    <script type="text/template" id="task-event2-template">
+
+        <h2>Tasks(Using Template)</h2>
+        <ul>
+            <li><%=title%><input type="text" class="event-title-input">
+                <button type="button" class="event-button2">Click Me</button>
+            </li>
+            <li><%=priority%></li>
+        </ul>
+
+    </script>
+
+    <script type="text/template" id="task-event3-template">
+
+        <h2>Tasks(Using Template)</h2>
+        <ul>
+            <li><%=title%><input type="text" class="event-title-input"></li>
+            <li><%=priority%></li>
+        </ul>
+
+    </script>
+
+    <script type="text/template" id="emps-template">
+        <h2 class="title">Employees List</h2>
+        <ul id="emps-list"></ul>
+    </script>
+
+    <script type="text/template" id="emp-rec-template">
+        <li>
+            <p class="task-list-item"><%=name%></p>
+
+            <div>
+                <div style="display: inline-block;">
+                    <a href="#" class="edit-emp-link">
+                        <img src="images/edit-icon.png" class="task-operations" width="20" height="20"/>
+                    </a>
+                </div>
+                <div style="display: inline-block;">
+                    <a href="#" class="del-emp-link">
+                        <img src="images/delete-icon.jpg" class="task-operations" width="20" height="20"/>
+                    </a>
+                </div>
+            </div>
+            <input type="text" class="edit-emp-input"/>
+        </li>
+    </script>
+
+    <script type="text/template" id="new-emp-template">
+        <h3>Enter New Record</h3>
+        <input id="new-name" type="text" placeholder="Enter Name..."/>
+        <div id="warning" class="warningmsg"></div>
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/basic.css">
+
+
+    <script data-main="js/main" src="js/vendor/jquery.js"></script>
+    <script data-main="js/main" src="js/vendor/underscore.js"></script>
+    <script data-main="js/main" src="js/vendor/backbone.js"></script>
+    <script data-main="js/main" src="js/views/new-emp-view.js"></script>
+    <script data-main="js/main" src="js/views/emp-view.js"></script>
+    <script data-main="js/main" src="js/views/emps-view.js"></script>
+    <script data-main="js/main" src="js/views/App_View.js"></script>
+
+    <script data-main="js/main" src="js/models/employee.js"></script>
+    <script data-main="js/main" src="js/collections/employees.js"></script>
+    <script data-main="js/main" src="js/routers/router.js"></script>
+
+
+    <!-- Templates -->
+
+</head>
+
+<body>
+
+
+<div id="container">
+
+    <div id="tasks">
+
+    </div>
+    <div id="n-tasks">
+
+    </div>
+
+    <div id="employees">
+
+    </div>
+    <div id="n-emp">
+
+    </div>
+</div>
+</body>
+</html>

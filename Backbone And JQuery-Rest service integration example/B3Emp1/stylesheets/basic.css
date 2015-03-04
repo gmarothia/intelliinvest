@@ -1,0 +1,64 @@
+body {
+  margin: 0px 0 30px 0;
+  background-color: #F8F8F8; }
+
+#container{
+  width: 670px;
+  min-height:600px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+
+  background-color: #EDF6FE; }
+
+h2.title {
+    font-size: 22pt; font-weight: bold; padding-left: 9px;
+    color: red;
+    font-family: Helvetica, sans-serif
+}
+
+p.task {
+    font-size: 15pt; font-weight: normal; padding-left: 5px; padding-right:5px; color: #000000;
+    font-family: Helvetica, sans-serif;
+    display: inline;
+
+}
+img.task-operations{
+    padding-left: 5px;
+    padding-right:5px;
+    vertical-align:text-top;
+    border:none;
+}
+.cars{
+    padding-left: 5px;
+    padding-right:5px;
+    float: right;
+
+}
+.task-list{
+
+
+    list-style-type: square;
+    padding: 6px;
+    margin: 2px;
+
+}
+.hotels{
+    padding-left: 5px;
+    padding-right:5px;
+    float: right;
+
+}
+
+.task-list-item
+{
+    color:blueviolet;
+    font-size: large;
+}
+
+.warningmsg{
+    color:red;
+    font-size:small;
+}
