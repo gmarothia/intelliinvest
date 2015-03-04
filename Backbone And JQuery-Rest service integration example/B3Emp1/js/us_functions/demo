@@ -1,0 +1,105 @@
+
+
+  //using map
+  map = _.map([1, 2, 3], function(num){ return num * 3; });
+  console.log(map);
+
+  //using each
+  each  = _.each([1, 2, 3], function(num){
+            console.log(num);
+
+        });
+
+// using
+   var filter = _.filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+
+    console.log(evens);
+
+//output [2, 4, 6]
+
+//using find
+ var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+    console.log(even);
+ // output 2
+
+//using reject
+ var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+    console.log(odds);
+
+
+//using all
+ var flag = _.all([-1, 2, 3, 4, 5, 6], function(num){ return num > 0; });
+    console.log(flag);
+//output false
+
+//using any
+var flag = _.any([-1, 2, 3, 4, 5, 6], function(num){ return num > 0; });
+    console.log(flag);
+//output true
+
+//using include
+var flag =  _.include([1, 2, 3], 3);
+
+console.log(flag);
+
+//output true
+
+// using pluck, plucks all names
+ var stooges = [{name : 'moe', age : 40}, {name : 'larry', age : 50}, {name : 'curly', age : 60}];
+    result = _.pluck(stooges, 'name');
+    console.log(result);
+
+//using max, selects highest value
+ var stooges = [{name : 'moe', age : 40}, {name : 'larry', age : 50}, {name : 'curly', age : 60}];
+    result = _.max(stooges, function(stooge){ return stooge.age; });
+    console.log(result);
+
+// min
+
+ var numbers = [10, 5, 100, 2, 1000];
+    result = _.min(numbers);
+    console.log(result);
+
+var numbers = [10, 5, 100, 2, 1000];
+_.min(numbers);
+
+//output {name : 'curly', age : 60}
+
+// sort by return value of iterator funct
+ result = _.sortBy([1, 2, 3, 4, 8, 6], function(num){ return Math.sin(num); });
+    console.log(result);
+//output [6, 8, 4, 3, 2, 1]
+
+result = _.size([5, 4, 3, 2, 1]);
+console.log(result);
+result // 5
+
+//using reduce, if i pass memo as 5 instead of 0 result will be 11
+var result = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 5);
+    console.log(result);
+
+//output 6
+_.indexOf([1, 2, 3], 2);
+
+//using index of
+ var result = _.indexOf([1, 2, 3], 2);
+    console.log(result);
+//output 1
+
+using lastIndexOf
+ var result = _.lastIndexOf([1, 2, 3, 1, 2, 3], 2);
+    console.log(result);
+//output  4
+
+
+
+
+
+
+
+
+
+
+
+
+
